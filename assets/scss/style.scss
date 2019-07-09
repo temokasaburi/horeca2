@@ -1,0 +1,1443 @@
+@import "_fonts.scss";
+@import "_variales.scss";
+@import "_slick.scss";
+@import "_slick-theme.scss";
+
+a {
+  color: #031A63;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #031A63;
+  transition-duration: 0.3s;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #031A63;
+}
+
+a.active {
+  color: #031A63;
+}
+
+h1.center {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  border-top: 5px solid #031A63;
+}
+
+header {
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(1, 0, 1, 0.1);
+}
+header ul li:last-child {
+  padding-right: 0;
+}
+header ul li:first-child {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+header ul li {
+  list-style-type: none;
+  float: left;
+  padding: 40px 35px;
+}
+header ul li a {
+  color: #031A63;
+  font-size: 20px;
+  font-family: "MCGeoM3-Regular";
+}
+header ul li a:hover {
+  color: #0DD194;
+}
+
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-control {
+  top: 45%;
+  font-size: 40px;
+  color: white;
+  opacity: 1;
+  background-image: none !important;
+}
+
+.text-over-slide {
+  position: absolute;
+  top: 14%;
+  left: 0;
+  right: 0;
+}
+.text-over-slide h1 {
+  width: 80%;
+  color: white;
+  font-size: 45px;
+  font-family: "MCGeoM3-Bold";
+  padding-bottom: 15px;
+}
+.text-over-slide .slider-more {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 0px;
+}
+.text-over-slide .slider-more a {
+  font-family: "MCGeoN2-Regular";
+  font-size: 20px;
+  color: #0053FB;
+}
+.text-over-slide .slider-more a > span {
+  position: relative;
+  top: 3px;
+  left: 8px;
+}
+.text-over-slide .slider-more a:hover {
+  color: #0DD194;
+}
+
+.section-header {
+  font-family: "MCGeoM3-Bold";
+  font-size: 38px;
+  color: #031A63;
+  padding: 40px 0;
+  margin: 0;
+}
+
+a.section-more {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  color: #282828;
+  font-size: 14px;
+}
+a.section-more span {
+  position: relative;
+  left: 10px;
+  top: 0px;
+  font-size: 12px;
+  transition-duration: 0.2s;
+}
+
+a.section-more:hover {
+  color: #0DD194;
+  transition-duration: 0.3s;
+}
+a.section-more:hover span {
+  left: 15px;
+  transition-duration: 0.3s;
+  color: #0DD194;
+}
+
+.news-section-inner {
+  position: relative;
+}
+.news-section-inner article:nth-of-type(3n+3) {
+  padding: 0 0 0 60px;
+}
+.news-section-inner article:nth-of-type(3n+1) {
+  padding: 0 60px 0 0;
+}
+.news-section-inner article {
+  padding: 0 30px 0 30px;
+  height: 420px;
+}
+.news-section-inner article > a:hover {
+  border-top: 10px solid #0DD194;
+  transition-duration: 0.3s;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(13, 209, 148, 0.19);
+}
+.news-section-inner article > a:hover > span {
+  color: #0DD194;
+}
+.news-section-inner article > a {
+  display: block;
+  border-top: 4px solid #0053FB;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.2s;
+}
+.news-section-inner article > a img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.news-section-inner article > a time {
+  margin: 0;
+  padding: 17px 20px;
+  display: block;
+  color: #666666;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+}
+.news-section-inner article > a h3 {
+  font-family: "MCGeoN2-Bold";
+  font-size: 22px;
+  color: #282828;
+  padding: 0 20px;
+  margin: 0;
+  height: 100px;
+}
+.news-section-inner article > a > span {
+  color: #0053FB;
+  font-family: "MCGeoN2-Regular";
+  font-size: 17px;
+  padding: 30px 20px;
+  margin-top: 10px;
+  display: block;
+}
+.news-section-inner article > a > span > span {
+  display: inline-block;
+  position: relative;
+  left: 8px;
+  top: 1.5px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+
+  
+  .main-footer {
+    background-image: url(../img/footerwave.png);
+    padding: 170px 0 50px 0;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: white;
+  }
+
+.main-footer .footer-social {
+  padding-top: 50px;
+}
+.main-footer .footer-social > span {
+  display: block;
+  font-size: 14px;
+  color: #282828;
+  opacity: 0.5;
+  font-family: "MCGeoN2-Regular";
+}
+.main-footer .footer-social > a {
+  display: inline-block;
+  font-size: 25px;
+  color: #282828;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.main-footer .footer-social > a:hover {
+  color: #0DD194;
+}
+.main-footer .footer-logo {
+  text-align: center;
+}
+.main-footer .footer-logo > img {
+  height: 180px;
+}
+.main-footer .footer-lang {
+  text-align: right;
+  padding-top: 50px;
+}
+.main-footer .footer-lang > span {
+  display: block;
+  color: #282828;
+  opacity: 0.5;
+  font-size: 14px;
+  font-family: "MCGeoN2-Regular";
+}
+.main-footer .footer-lang > h3 {
+  color: #282828;
+  font-size: 18px;
+  margin: 0;
+  font-family: "MCGeoN2-Regular";
+}
+.main-footer .footer-lang > h3 > span {
+  position: relative;
+  font-size: 5px;
+  top: -2px;
+  left: 3px;
+}
+
+.footer-nav {
+  padding-top: 50px;
+}
+.footer-nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.footer-nav li:first-of-type {
+  padding-left: 0px;
+}
+.footer-nav li:last-of-type {
+  padding-right: 0px;
+  border-right: none;
+}
+.footer-nav li {
+  display: block;
+  float: left;
+  padding: 0px 29px;
+  border-right: 1px solid #282828;
+}
+.footer-nav li:hover a {
+  position: relative;
+  top: -2px;
+  color: #0DD194;
+  transition-duration: 0.3s;
+}
+.footer-nav li > a {
+  font-family: "MCGeoM3-Regular";
+  font-size: 16px;
+  color: #282828;
+  transition-duration: 0.3s;
+}
+
+.rights-reserved {
+  padding: 12px 0px;
+  border-top: 1px solid #031A63;
+}
+.rights-reserved span {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #031A63;
+}
+.rights-reserved a {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #0DD194;
+  float: right;
+}
+
+.partners {
+  padding: 60px 0 60px 60px;
+}
+.partners .slick-arrow:before {
+  font-size: 50px;
+  position: relative;
+  top: -20px;
+}
+
+.partner-img {
+  display: inline-block;
+  height: 90px;
+  width: 160px;
+  background-size: 100%;
+  background-repeat: cover;
+  transition-duration: 0.3s;
+  background-position: center;
+}
+.partner-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(13, 209, 148, 0.19);
+  transition-duration: 0.3s;
+}
+
+.product-section {
+    background-image: url(../img/midmapwave.png);
+  padding: 50px 0;
+  margin: 100px 0;
+  background-size: 100% 100%;
+  padding-bottom: 900px;
+  padding-top: 200px;
+  background-repeat: no-repeat;
+}
+
+.product-section-inner {
+  position: relative;
+}
+
+.product-slider .slick-arrow:before {
+  font-size: 50px;
+  position: relative;
+  top: -20px;
+}
+.product-slider .slick-prev {
+  margin-left: -30px;
+}
+.product-slider .slick-next {
+  margin-right: -30px;
+}
+
+.product img {
+  height: 525px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.product .product-description {
+  background-color: rgba(0, 83, 251, 0.12);
+  height: 410px;
+  position: relative;
+  top: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 70px 50px;
+}
+.product .product-description span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.product .product-description span span.darker {
+  font-weight: 1000;
+}
+.product .product-description a {
+  display: block;
+}
+.product .product-description a.download {
+  font-size: 14px;
+  font-family: "MCGeoM3-Regular";
+  color: #0DD194;
+  padding: 10px 0;
+  margin: 40px 0;
+}
+.product .product-description a.download > span {
+  color: #0DD194;
+  position: relative;
+  top: 1px;
+  left: 5px;
+  transition-duration: 0.3s;
+}
+.product .product-description a.download:hover > span {
+  left: 8px;
+  transition-duration: 0.3s;
+}
+.product .product-description a.more {
+  font-family: "MCGeoN2-Regular";
+  font-size: 20px;
+  color: #0053FB;
+}
+.product .product-description a.more > span {
+  color: #0053FB;
+  position: relative;
+  left: 5px;
+  transition-duration: 0.3s;
+}
+.product .product-description a.more:hover > span {
+  left: 8px;
+  transition-duration: 0.3s;
+}
+
+.product-listing {
+  margin-top: 100px;
+}
+
+.product-card {
+  width: 80%;
+  margin-left: 20%;
+  background-color: white;
+  border-radius: 5px;
+  border-top: 6px solid #0DD194;
+  transition-duration: 0.3s;
+  margin-bottom: 10px;
+}
+.product-card:hover {
+  border-top: 10px solid #0DD194;
+  transition-duration: 0.3s;
+  margin-bottom: 6px;
+}
+.product-card img {
+  width: 100%;
+  height: 178px;
+  object-fit: cover;
+}
+.product-card .product-card-desc {
+  padding: 30px 40px;
+}
+.product-card .product-card-desc span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.product-card .product-card-desc span span.darker {
+  font-weight: 1000;
+}
+.product-card .product-card-desc a {
+  display: block;
+}
+.product-card .product-card-desc a.download {
+  font-size: 14px;
+  font-family: "MCGeoM3-Regular";
+  color: #0DD194;
+  padding: 10px 0;
+  margin: 25px 0;
+}
+.product-card .product-card-desc a.download > span {
+  color: #0DD194;
+  position: relative;
+  top: 1px;
+  left: 5px;
+  transition-duration: 0.3s;
+}
+.product-card .product-card-desc a.download:hover > span {
+  left: 8px;
+  transition-duration: 0.3s;
+}
+.product-card .product-card-desc a.more {
+  font-family: "MCGeoN2-Regular";
+  font-size: 20px;
+  color: #0053FB;
+}
+.product-card .product-card-desc a.more > span {
+  color: #0053FB;
+  position: relative;
+  left: 5px;
+  transition-duration: 0.3s;
+}
+.product-card .product-card-desc a.more:hover > span {
+  left: 8px;
+  transition-duration: 0.3s;
+}
+
+.product-listing-desc {
+  margin-left: 20px;
+  padding: 10px 20px;
+  width: 80%;
+  border-bottom: rgba(0, 83, 251, 0.12) 1px solid;
+}
+.product-listing-desc h3 {
+  color: black;
+}
+.product-listing-desc span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.product-listing-desc span span.darker {
+  font-weight: 1000;
+}
+
+.product-listing-desc:last-of-type {
+  border-bottom: none;
+}
+
+.news-section-detailed img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.news-section-detailed .news-section-detailed-desc {
+  padding: 80px 100px;
+}
+.news-section-detailed .news-section-detailed-desc time {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.news-section-detailed .news-section-detailed-desc h1 {
+  font-family: "MCGeoN2-Bold";
+  font-size: 32px;
+  color: #282828;
+}
+.news-section-detailed .news-section-detailed-desc p {
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #666666;
+}
+
+.products-card:nth-child(3n+1) {
+  padding-right: 5%;
+  padding-top: 50px;
+}
+
+.products-card:nth-child(3n+2) {
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-top: 50px;
+}
+
+.products-card:nth-child(3n+3) {
+  padding-left: 5%;
+  padding-top: 50px;
+}
+
+.products-card .products-card-inner:hover {
+  height: 447px;
+  box-shadow: none;
+  border: 2px solid #0053FB;
+  transition-duration: 0.3s;
+}
+.products-card .products-card-inner {
+  height: 447px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.3s;
+}
+.products-card .products-card-inner img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+.products-card .products-card-inner h5 {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #282828;
+  padding: 10px 20px;
+  height: 50px;
+}
+.products-card .products-card-inner span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+  padding: 10px 20px;
+}
+.products-card .products-card-inner a {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+}
+.products-card .products-card-inner a.more:hover {
+  color: white;
+  background-color: #0053FB;
+}
+.products-card .products-card-inner a.more:hover span {
+  color: white;
+}
+.products-card .products-card-inner a.more {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #0053FB;
+  border-top: 2px solid #F5F6F6;
+  margin-top: 15px;
+}
+.products-card .products-card-inner a.more span {
+  color: #0053FB;
+  left: -10px;
+  position: relative;
+}
+.products-card .products-card-inner a.download:hover {
+  color: white;
+  background-color: #0DD194;
+}
+.products-card .products-card-inner a.download:hover span {
+  color: white;
+}
+.products-card .products-card-inner a.download {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #0DD194;
+  background-color: #F5F6F6;
+}
+.products-card .products-card-inner a.download span {
+  left: -10px;
+  color: #0DD194;
+  position: relative;
+}
+
+.products-head {
+  position: relative;
+}
+.products-head img {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+}
+.products-head > div.products-head-over-img {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+}
+.products-head > div.products-head-over-img h1 {
+  color: #FFFFFF;
+  font-family: "MCGeoM3-Bold";
+  font-size: 50px;
+}
+
+.product-filter {
+  border-bottom: 1px solid #F5F6F6;
+  padding-bottom: 8px;
+}
+.product-filter ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+.product-filter ul li {
+  float: left;
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #282828;
+  border-right: 1px solid #F5F6F6;
+  padding: 5px 20px;
+}
+.product-filter ul li:hover {
+  cursor: pointer;
+}
+.product-filter ul li span {
+  position: relative;
+  font-size: 5px;
+  left: 5px;
+  top: -2px;
+}
+.product-filter ul li button {
+  border: none;
+  background-color: white;
+  color: #0053FB;
+}
+.product-filter ul li button:hover {
+  color: #0dd194;
+}
+.product-filter ul li ul.submenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 30px;
+  z-index: 5;
+}
+.product-filter ul li ul.submenu > li {
+  float: none;
+  border: none;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox + label:before {
+  content: "";
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  border: 1px solid #0053FB;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:hover + label:before {
+  background: #0053FB;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:checked + label:before {
+  background: white;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.product-filter ul li ul.submenu > li .styled-checkbox:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: #0053FB;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 #0053FB, 4px 0 0 #0053FB, 4px -2px 0 #0053FB, 4px -4px 0 #0053FB, 4px -6px 0 #0053FB, 4px -8px 0 #0053FB;
+  transform: rotate(45deg);
+}
+.product-filter ul li:hover {
+  position: relative;
+}
+.product-filter ul li:hover ul.submenu {
+  display: block;
+}
+
+.careers-card .careers-card-inner:hover {
+  box-shadow: none;
+  border: 2px solid #0053FB;
+  transition-duration: 0.3s;
+}
+.careers-card .careers-card-inner {
+  height: 375px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.3s;
+}
+.careers-card .careers-card-inner address {
+  font-family: "MCGeoM3-Regular";
+  font-size: 12px;
+  color: #282828;
+  padding: 10px 20px;
+  padding-top: 30px;
+}
+.careers-card .careers-card-inner h6 {
+  font-family: "MCGeoN2-Bold";
+  font-size: 14px;
+  color: #282828;
+  padding: 0px 20px;
+}
+.careers-card .careers-card-inner p {
+  font-family: "MCGeoN2-Light";
+  font-size: 12px;
+  color: #282828;
+  padding: 10px 20px;
+  height: 173px;
+}
+.careers-card .careers-card-inner > span {
+  width: 100%;
+}
+.careers-card .careers-card-inner > span > span {
+  font-family: "MCGeoM3-Regular";
+  font-size: 10px;
+  color: #282828;
+  padding: 0 20px;
+}
+.careers-card .careers-card-inner > span > span:last-child {
+  float: right;
+}
+.careers-card .careers-card-inner a {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+}
+.careers-card .careers-card-inner a.more:hover {
+  color: white;
+  background-color: #0053FB;
+}
+.careers-card .careers-card-inner a.more:hover span {
+  color: white;
+}
+.careers-card .careers-card-inner a.more {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #0053FB;
+  border-top: 2px solid #F5F6F6;
+  margin-top: 15px;
+}
+.careers-card .careers-card-inner a.more span {
+  color: #0053FB;
+  left: 5px;
+  top: 1px;
+  position: relative;
+}
+
+.careers-card:nth-child(3n+1) {
+  padding-right: 3%;
+  padding-top: 50px;
+}
+
+.careers-card:nth-child(3n+2) {
+  padding-right: 1.5%;
+  padding-left: 1.5%;
+  padding-top: 50px;
+}
+
+.careers-card:nth-child(3n+3) {
+  padding-left: 3%;
+  padding-top: 50px;
+}
+
+.career-inner {
+  position: relative;
+}
+.career-inner h5 {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+.career-inner h3 {
+  font-family: "MCGeoN2-Bold";
+  font-size: 32px;
+  color: #282828;
+  padding: 0 30px;
+  margin-top: 0px;
+}
+.career-inner a.back-to-vacancy {
+  position: absolute;
+  right: 60px;
+  top: 70px;
+  color: #A8030D;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  transition-duration: 0.3px;
+}
+.career-inner a.back-to-vacancy:hover {
+  color: #d40412;
+  transition-duration: 0.3px;
+}
+.career-inner span {
+  padding: 0px 20px;
+  display: inline-block;
+  margin: 10px 0px;
+  height: 15px;
+  color: #282828;
+  font-family: "MCGeoM3-Regular";
+  font-size: 12px;
+}
+.career-inner span:first-of-type {
+  padding-left: 30px;
+  margin-left: 0;
+}
+.career-inner span:not(:last-of-type) {
+  border-right: 1px solid #282828;
+}
+.career-inner span::before {
+  position: relative;
+  left: -2.5px;
+}
+.career-inner p {
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #666666;
+  padding: 40px 30px;
+}
+
+.search-section {
+  background-color: #f9f9f9;
+  padding-bottom: 50px;
+}
+.search-section .search-inp {
+  position: relative;
+  margin-top: 200px;
+  background-color: #f9f9f9;
+}
+.search-section span.icon-search1 {
+  position: absolute;
+  top: 10px;
+  font-size: 26px;
+  left: 10px;
+}
+.search-section input:focus {
+  outline: none;
+}
+.search-section input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cecece;
+  height: 50px;
+  padding: 2px 50px;
+  font-size: 35px;
+}
+.search-section button.icon-long-arrow-right {
+  position: absolute;
+  right: 6px;
+  font-size: 27px;
+  top: 11px;
+  background-color: transparent;
+  border: none;
+}
+.search-section span.popular-res {
+  width: 100px;
+  height: 16px;
+  opacity: 0.5;
+  font-family: SegoeUI;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #707070;
+  margin-top: 50px;
+  display: block;
+}
+.search-section .pop-res {
+  margin-top: 50px;
+}
+.search-section .pop-res a {
+  width: 100%;
+  display: block;
+  /* text-align: center; */
+  font-family: SegoeUI;
+  font-size: 18px;
+  padding: 20px;
+}
+.search-section .pop-res a:hover {
+  background-color: white;
+}
+.search-section span.search-res {
+  display: block;
+  background-color: #f9f9f9;
+  font-family: SegoeUI;
+  font-size: 19px;
+  color: #707070;
+  margin-top: 52px;
+}
+.search-section .search-result {
+  border-top: 1px solid #707070;
+}
+.search-section div.res {
+  padding: 40px 0px;
+}
+.search-section div.res h3 {
+  opacity: 0.5;
+  font-family: SegoeUI;
+  font-size: 20px;
+  color: #282828;
+}
+.search-section div.res p {
+  color: #666666;
+  font-family: MCGeoN2;
+  font-size: 16px;
+}
+.search-section div.res a {
+  color: #666666;
+  font-family: MCGeoN2;
+  font-size: 16px;
+}
+.search-section div.res a span {
+  font-size: 19px;
+  position: relative;
+  top: 5px;
+  color: #666666;
+}
+.search-section div.res a:hover {
+  color: #282828;
+}
+.search-section div.res a:hover span {
+  color: #282828;
+}
+
+.news-page {
+  padding-top: 50px;
+}
+.news-page .news-section-card {
+  height: 450px;
+  border-top: 5px solid #a8030d;
+  background-color: #f5f6f6;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.news-page .news-section-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.news-page .news-section-card span {
+  display: block;
+  padding: 20px;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.news-page .news-section-card h2 {
+  margin: 0;
+  padding: 0 20px;
+  font-family: "MCGeoN2-Bold";
+  font-size: 22px;
+  height: 120px;
+  overflow: hidden;
+  color: #282828;
+}
+.news-page .news-section-card a {
+  font-family: "MCGeoN2-Regular";
+  font-size: 20px;
+  display: block;
+  color: #0053fb;
+  padding: 20px;
+}
+.news-page .news-section-card a > span {
+  display: inline;
+  color: #0053fb;
+}
+.news-page .news-page-card-list a:first-child span {
+  padding-top: 0;
+}
+.news-page .news-page-card-list a {
+  display: block;
+  height: 125px;
+  border-bottom: 1px solid #f5f6f6;
+}
+.news-page .news-page-card-list a span {
+  display: block;
+  padding: 20px;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.news-page .news-page-card-list a h2 {
+  margin: 0;
+  padding: 0 20px;
+  font-family: "MCGeoN2-Bold";
+  font-size: 22px;
+  height: 70px;
+  overflow: hidden;
+  color: #282828;
+}
+.news-page .news-page-list {
+  margin-bottom: 50px;
+}
+.news-page .news-page-list a {
+  display: block;
+  background-color: #f5f6f6;
+  padding: 0;
+  margin-top: 50px;
+  position: relative;
+  height: 180px;
+}
+.news-page .news-page-list a img {
+  width: 41.66666667%;
+  display: inline-block;
+  height: 180px;
+  object-fit: cover;
+  margin-top: -72px;
+}
+.news-page .news-page-list a div {
+  width: 57.44444442%;
+  display: inline-block;
+}
+.news-page .news-page-list a div span {
+  display: block;
+  margin: 20px;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+}
+.news-page .news-page-list a div h2 {
+  margin: 0;
+  padding: 0 20px;
+  font-family: "MCGeoN2-Bold";
+  font-size: 22px;
+  height: 70px;
+  overflow: hidden;
+  color: #282828;
+}
+
+.about-discover-section .discover-section {
+  box-shadow: 0 -20px 12px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+  margin-top: -100px;
+  position: relative;
+  padding: 20px 100px;
+  z-index: 1;
+}
+.about-discover-section .discover-section h1 {
+  font-family: "MCGeoM3-Light";
+  font-size: 50px;
+  color: #031a63;
+  text-align: center;
+}
+.about-discover-section .discover-section h1 span {
+  font-family: "MCGeoM3-Bold";
+  display: inline;
+  font-size: 50px;
+  color: #031a63;
+}
+.about-discover-section .discover-section span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+  display: block;
+  margin: auto;
+  width: fit-content;
+}
+.about-discover-section .discover-section p {
+  margin-top: 70px;
+  text-align: center;
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #666666;
+}
+.about-discover-section .Corporate-section {
+  margin-top: 100px;
+}
+.about-discover-section .Corporate-section h2 {
+  text-align: center;
+  color: #031a63;
+  font-family: "MCGeoM3-Light";
+  font-size: 50px;
+}
+.about-discover-section .Corporate-section div.infos {
+  margin-top: 50px;
+  height: 170px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+.about-discover-section .Corporate-section div.infos div.middle {
+  border-left: 1px solid #f5f6f6;
+  border-right: 1px solid #f5f6f6;
+}
+.about-discover-section .Corporate-section div.infos div {
+  height: 160px;
+  margin-top: 5px;
+}
+.about-discover-section .Corporate-section div.infos div span {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  color: #031a63;
+  font-family: "MCGeoM3-Light";
+  font-size: 18px;
+  margin-top: 30px;
+}
+.about-discover-section .Corporate-section div.infos div h1 {
+  text-align: center;
+  color: #0053fb;
+  font-family: "MCGeoM3-Light";
+  font-size: 50px;
+}
+.about-discover-section .Corporate-section p {
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+  font-size: 22px;
+  font-family: "MCGeoN2-Light";
+  color: #666666;
+}
+.about-discover-section .team {
+  margin-top: 100px;
+  display: block;
+  height: 1560px;
+  margin-bottom: 100px;
+}
+.about-discover-section .team div.col-lg-6 {
+  height: 780px;
+  display: block;
+}
+.about-discover-section .team div.col-lg-6 img {
+  width: 100%;
+  height: 780px;
+  object-fit: cover;
+}
+.about-discover-section .team div.col-lg-6 .text {
+  width: 415px;
+  margin-top: 20%;
+  margin: 20% 50px;
+}
+.about-discover-section .team div.col-lg-6 .text h1 {
+  font-family: "MCGeoM3-Light";
+  font-size: 50px;
+  color: #031a63;
+}
+.about-discover-section .team div.col-lg-6 .text p {
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #666666;
+}
+
+.products-inner {
+  margin-top: 100px;
+}
+.products-inner .col-lg-5 img {
+  width: 95%;
+  height: 505px;
+  object-fit: cover;
+}
+.products-inner .col-lg-7 {
+  padding-left: 40px;
+}
+.products-inner .col-lg-7 span.breadcrumbs {
+  color: #666666;
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+}
+.products-inner .col-lg-7 h2 {
+  color: #282828;
+  font-family: "MCGeoN2-Bold";
+  font-size: 32px;
+  padding: 25px 0;
+}
+.products-inner .col-lg-7 span.descr {
+  font-family: "MCGeoN2-Light";
+  color: #282828;
+  font-size: 22px;
+  padding: 5px 20px;
+}
+.products-inner .col-lg-7 span.descr > b {
+  font-family: "MCGeoN2-Regular";
+  font-weight: 300;
+}
+.products-inner .col-lg-7 p {
+  padding: 5px;
+  width: 95%;
+  margin-top: 120px;
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #666666;
+  height: 170px;
+  overflow: hidden;
+}
+.products-inner .col-lg-7 a.more {
+  color: #0053fb;
+  font-family: "MCGeoN2-Regular";
+  font-size: 25px;
+  margin-top: 19px;
+  display: block;
+}
+.products-inner .col-lg-7 a.more > span {
+  position: relative;
+  right: -10px;
+  top: 3px;
+}
+.products-inner .profuct-data {
+  margin-top: 100px;
+}
+.products-inner .profuct-data .col-lg-6.graybck > .row {
+  background-color: #f5f6f6;
+  text-align: center;
+  padding-top: 34.5%;
+}
+.products-inner .profuct-data .col-lg-6.graybck > .row h3 {
+  font-family: "MCGeoN2-Bold";
+  font-size: 32px;
+}
+.products-inner .profuct-data .col-lg-6.graybck > .row h3.data {
+  color: #0053fb;
+}
+.products-inner .profuct-data .col-lg-6.graybck > .row h3.download {
+  color: #0dd194;
+}
+.products-inner .profuct-data .col-lg-6 > .row {
+  height: 570px;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.data {
+  margin-top: 60px;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.data span:last-child {
+  border: none;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.data span {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 20px 10px;
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #282828;
+  border-bottom: 1px solid #f5f6f6;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.data span > b {
+  font-family: "MCGeoN2-Regular";
+  font-weight: 300;
+  width: 130px;
+  display: inline-block;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.download {
+  margin-top: 110px;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.download a {
+  padding: 30px 0;
+  display: block;
+  font-size: 22px;
+  width: 90%;
+  font-family: "MCGeoN2-Regular";
+  color: #0053fb;
+  margin: auto;
+}
+.products-inner .profuct-data .col-lg-6 > .row div.download a span {
+  display: inline-block;
+  margin-right: 14px;
+  font-size: 25px;
+  position: relative;
+  top: 2px;
+}
+.products-inner section.more-product-section.col-lg-12 {
+  margin-top: 150px;
+}
+.products-inner .more-products-card {
+  height: 396px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  border: 2px solid white;
+  transition-duration: 0.3s;
+}
+.products-inner .more-products-card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+.products-inner .more-products-card h5 {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #282828;
+  padding: 10px 20px;
+  height: 50px;
+}
+.products-inner .more-products-card span {
+  font-family: "MCGeoM3-Light";
+  font-size: 14px;
+  color: #666666;
+  padding: 10px 20px;
+}
+.products-inner .more-products-card a {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+}
+.products-inner .more-products-card a.more:hover {
+  color: white;
+  background-color: #0053FB;
+  border-radius: 5px;
+}
+.products-inner .more-products-card a.more:hover span {
+  color: white;
+}
+.products-inner .more-products-card a.more {
+  font-family: "MCGeoN2-Regular";
+  font-size: 14px;
+  color: #0053FB;
+  border-top: 2px solid #F5F6F6;
+  margin-top: 15px;
+}
+.products-inner .more-products-card a.more span {
+  color: #0053FB;
+  left: -10px;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+.products-inner span.more {
+    color: #0053fb;
+    font-family: "MCGeoN2-Regular";
+    font-size: 25px;
+    margin-top: 19px;
+    display: block;
+    cursor: pointer;
+}
+
+#descriptionDiv {
+  width: 100%;
+  margin: 50px 0;
+}
+section.contact-page p{
+  width: 100%;
+  padding: 80px 120px;
+  font-family: "MCGeoN2-Light";
+  font-size: 22px;
+  color: #031a63;
+  font-weight: 300;
+}
+section.contact-page div.contact-block{
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
+
+    >div.col-lg-6:first-of-type{
+        border-right: 2px solid rgba(0, 0, 0, 0.16);
+    }
+    >div.col-lg-6{
+        height: 270px;
+        margin-top: 15.5px;
+        padding-top: 40px;
+        span{
+            display: block;
+            font-family: $gnl;
+            font-size: 22px;
+            color: #031a63;
+            padding: 7.5px 90px;
+        }
+        a{
+            display: block;
+            font-family: $gnl;
+            font-size: 22px;
+            color: #0053fb;
+            padding: 7.5px 90px;
+        }
+    }
+}
