@@ -4140,11 +4140,11 @@ footer {
   box-shadow: none;
   border: 2px solid #0053FB;
   transition-duration: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .products-card .products-card-inner {
   height: 447px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   border: 2px solid white;
   transition-duration: 0.3s;
@@ -4177,6 +4177,10 @@ footer {
   padding: 15px 20px;
 }
 
+.products-card .products-card-inner:hover a.more {
+  display: block;
+}
+
 .products-card .products-card-inner a.more:hover {
   color: white;
   background-color: #0053FB;
@@ -4184,6 +4188,9 @@ footer {
 
 .products-card .products-card-inner a.more:hover span {
   color: white;
+  left: 2px;
+  transition-duration: 0.2s;
+  position: relative;
 }
 
 .products-card .products-card-inner a.more {
@@ -4192,12 +4199,18 @@ footer {
   color: #0053FB;
   border-top: 2px solid #F5F6F6;
   margin-top: 15px;
+  display: none;
 }
 
 .products-card .products-card-inner a.more span {
   color: #0053FB;
   left: -10px;
   position: relative;
+  transition-duration: 0.2s;
+}
+
+.products-card .products-card-inner:hover a.download {
+  display: block;
 }
 
 .products-card .products-card-inner a.download:hover {
@@ -4214,6 +4227,7 @@ footer {
   font-size: 14px;
   color: #0DD194;
   background-color: #F5F6F6;
+  display: none;
 }
 
 .products-card .products-card-inner a.download span {
