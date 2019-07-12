@@ -92,7 +92,7 @@
                     <div class="news-section-inner">
                         <h1 class="section-header">სიახლეები</h1>
                         <a href="" class="section-more">ყველას ნახვა <span class="icon-arrow-point-to-right"></span></a>
-                        <article class="col-lg-4">
+                        <article class="col-lg-4 col-md-4">
                             <a href="">
                                 <img src="assets/img/slider-img-1.jpg" alt="">
                                 <time>სიახლე | აპრ 16, 2019</time>
@@ -100,7 +100,7 @@
                                 <span href="">მეტის ნახვა <span class="icon-arrow-thin-right"></span></span>
                             </a>
                         </article>
-                        <article class="col-lg-4">
+                        <article class="col-lg-4  col-md-4">
                             <a href="">
                                 <img src="assets/img/slider-img-1.jpg" alt="">
                                 <time>სიახლე | აპრ 16, 2019</time>
@@ -108,7 +108,7 @@
                                 <span href="">მეტის ნახვა <span class="icon-arrow-thin-right"></span></span>
                             </a>
                         </article>
-                        <article class="col-lg-4">
+                        <article class="col-lg-4  col-md-4">
                             <a href="">
                                 <img src="assets/img/slider-img-1.jpg" alt="">
                                 <time>სიახლე | აპრ 16, 2019</time>
@@ -130,7 +130,7 @@
                         <a href="" class="section-more">ყველას ნახვა <span class="icon-arrow-point-to-right"></span></a>
                         <div class="product-slider">
                             <div class="product">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6">
                                     <div class="row">
                                         <div class="product-description">
                                             <span>Dispensers > Paper Towels</span>
@@ -142,14 +142,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-md-6 image-div">
                                     <div class="row">
                                         <img src="assets/img/slider-img-1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="product">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  col-md-6">
                                     <div class="row">
                                         <div class="product-description">
                                             <span>Dispensers > Paper Towels</span>
@@ -161,14 +161,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  col-md-6">
                                     <div class="row">
                                         <img src="assets/img/slider-img-1.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="product">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  col-md-6">
                                     <div class="row">
                                         <div class="product-description">
                                             <span>Dispensers > Paper Towels</span>
@@ -180,7 +180,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6  col-md-6">
                                     <div class="row">
                                         <img src="assets/img/slider-img-1.jpg" alt="">
                                     </div>
@@ -278,16 +278,16 @@
         <div class="main-footer ">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 footer-social row">
+                    <div class="col-lg-4  col-md-4 col-sm-12 footer-social row">
                         <span>სოციალური ქსელები</span>
                         <a href=""><span class="icon-linkedin-square"></span></a>
                         <a href=""><span class="icon-facebook-square"></span></a>
                         <a href=""><span class="icon-twitter-square"></span></a>
                     </div>
-                    <div class="col-lg-4 footer-logo ">
+                    <div class="col-lg-4 col-md-4 col-sm-12 footer-logo ">
                         <img src="assets/img/Logo_ENG.svg" alt="">
                     </div>
-                    <div class="col-lg-4 footer-lang ">
+                    <div class="col-lg-4 col-md-4 col-sm-12 footer-lang ">
                         <span>აირჩიე ენა:</span>
                         <h3>ქართული <span class="icon-arrow-point-to-right-1"></span></h3>
                     </div>
@@ -329,6 +329,36 @@
             slidesToScroll: 5,
             autoplay: true,
             autoplaySpeed: 2000,
+            responsive: [
+            {
+        breakpoint: 1200, //at 600px wide, only 2 slides will show
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+        }
+        },
+        {
+        breakpoint: 992, //at 600px wide, only 2 slides will show
+        settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3
+        }
+        },
+        {
+        breakpoint: 767, //at 480px wide, only one slide will show
+        settings: {
+            slidesToShow:2,
+            slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint:501, //at 480px wide, only one slide will show
+        settings: {
+            slidesToShow:1,
+            slidesToScroll: 1
+        }
+        }
+        ]
         });
         $('.product-slider').slick({
             autoplay: true,

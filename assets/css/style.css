@@ -3861,7 +3861,13 @@ footer {
 }
 
 .partners {
-  padding: 60px 0 60px 60px;
+  padding: 60px 60px 60px 100px;
+}
+.partners .slick-next {
+  margin-right: 50px;
+}
+.partners .slick-prev {
+  margin-left: 50px;
 }
 
 .partners .slick-arrow:before {
@@ -4499,7 +4505,7 @@ footer {
 .career-inner a.back-to-vacancy {
   position: absolute;
   right: 60px;
-  top: 70px;
+  top: 65px;
   color: #A8030D;
   font-family: "MCGeoM3-Light";
   font-size: 14px;
@@ -5151,14 +5157,17 @@ section.contact-page div.contact-block {
   border: 1px solid rgba(0, 0, 0, 0.16);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.16);
 }
+
 section.contact-page div.contact-block > div.col-lg-6:first-of-type {
   border-right: 2px solid rgba(0, 0, 0, 0.16);
 }
+
 section.contact-page div.contact-block > div.col-lg-6 {
   height: 270px;
   margin-top: 15.5px;
   padding-top: 40px;
 }
+
 section.contact-page div.contact-block > div.col-lg-6 span {
   display: block;
   font-family: "MCGeoN2-Light";
@@ -5166,12 +5175,296 @@ section.contact-page div.contact-block > div.col-lg-6 span {
   color: #031a63;
   padding: 7.5px 90px;
 }
+
 section.contact-page div.contact-block > div.col-lg-6 a {
   display: block;
   font-family: "MCGeoN2-Light";
   font-size: 22px;
   color: #0053fb;
   padding: 7.5px 90px;
+}
+
+.mobile-version {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .text-over-slide .slider-more a {
+    padding-left: 150px;
+  }
+
+  .text-over-slide h1 {
+    padding-left: 150px;
+  }
+
+  .product-section {
+    background-size: 120% 100%;
+    background-position: center;
+  }
+}
+@media (max-width: 1199px) {
+  .product-section {
+    background-size: 170% 100%;
+    background-position: center;
+    padding-bottom: 1000px;
+  }
+
+  .product-card {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .product-listing-desc {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-nav {
+    padding-top: 240px;
+  }
+
+  .footer-nav li > a {
+    font-size: 12px;
+  }
+
+  header ul li a {
+    font-size: 18px;
+  }
+
+  header ul li {
+    padding: 43px 23px;
+  }
+
+  .products-inner .col-lg-7 p {
+    margin-top: 0px;
+  }
+
+  section.contact-page div.contact-block > div.col-lg-6 {
+    height: 285px;
+  }
+
+  section.contact-page div.contact-block {
+    height: 315;
+  }
+}
+@media (max-width: 991px) {
+  .text-over-slide h1 {
+    font-size: 28px;
+  }
+
+  .text-over-slide {
+    top: 35%;
+  }
+
+  .news-section-inner article {
+    height: 470px;
+  }
+
+  header ul li {
+    padding: 45px 15px;
+  }
+
+  .news-section-inner article:nth-of-type(3n+1), .news-section-inner article:nth-of-type(3n+2), .news-section-inner article:nth-of-type(3n+3) {
+    padding: 0;
+  }
+
+  header ul li a {
+    font-size: 14px;
+  }
+
+  .decktop-version {
+    display: none;
+  }
+
+  .mobile-version {
+    display: initial;
+  }
+
+  .products-inner .profuct-data .col-lg-6.graybck > .row {
+    padding-top: 25.5%;
+  }
+
+  .more-product-section > article {
+    height: 630px;
+  }
+
+  .products-inner .more-products-card {
+    height: 600px;
+  }
+
+  .products-inner .more-products-card img {
+    height: 439px;
+  }
+
+  .products-card .products-card-inner a.more {
+    display: block;
+  }
+
+  .products-card .products-card-inner a.download {
+    display: block;
+  }
+
+  .products-card .products-card-inner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .news-page-card-list.col-lg-7.col-md-7 {
+    margin-top: 57px;
+  }
+
+  .products-head > div.products-head-over-img h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .careers-card:nth-child(3n+1), .careers-card:nth-child(3n+2), .careers-card:nth-child(3n+3) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.contact-page div.contact-block > div.col-lg-6 span, section.contact-page div.contact-block > div.col-lg-6 a {
+    font-size: 20px;
+    padding: 7.5px 50px;
+  }
+
+  section.contact-page p {
+    padding: 80px 0;
+  }
+
+  .product-section-inner div.product {
+    position: relative;
+  }
+
+  .product .product-description {
+    padding-top: 160px;
+    margin-top: 45px;
+    text-align: center;
+  }
+  .product .product-description > h3 {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .product-slider .slick-next {
+    margin-right: 60px;
+  }
+
+  .product-slider .slick-prev {
+    margin-left: 60px;
+  }
+
+  .product img {
+    height: 223px;
+    margin: -450px auto 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .partners {
+    padding: 60px 60px 60px 60px;
+  }
+
+  .main-footer .footer-social > a {
+    font-size: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+
+  .main-footer .footer-social {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #282828;
+    padding-left: 60px;
+  }
+
+  .main-footer .footer-logo {
+    display: none;
+  }
+
+  .main-footer .footer-lang {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .slider-more {
+    display: none;
+  }
+
+  .carousel-control {
+    display: none;
+  }
+
+  .section-header {
+    font-size: 25px;
+    margin-left: 15px;
+  }
+
+  .news-section-detailed .news-section-detailed-desc {
+    padding: 80px 30px;
+  }
+
+  .news-section-inner article {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  a.section-more {
+    top: 40px;
+    right: 30px;
+  }
+
+  .text-over-slide {
+    top: 60px;
+  }
+
+  .text-over-slide h1 {
+    font-size: 21px;
+    width: 100%;
+    text-align: center;
+    padding: 0 84px;
+  }
+
+  .news-page .news-section-card {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .news-page-list {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  section.contact-page div.contact-block {
+    height: 540px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  section.contact-page div.contact-block > div.col-lg-6 {
+    height: 250px;
+    padding-top: 55px;
+    width: fit-content;
+    margin: auto;
+  }
+
+  section.contact-page div.contact-block > div.col-lg-6:first-of-type {
+    border-right: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+  }
+
+  section.contact-page p {
+    padding: 80px 30px;
+  }
+
+  .carousel-inner {
+    height: initial;
+  }
+}
+@media (max-width: 501px) {
+  .partners {
+    padding: 60px 60px 60px 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
