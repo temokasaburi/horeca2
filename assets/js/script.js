@@ -23,10 +23,19 @@ $(document).ready(function() {
         .css("display") == "block"
     ) {
       $(this)
+        .parent()
+        .removeClass("toggle");
+      $(this)
         .next(".submenu")
         .fadeOut(300);
     } else {
       $("ul.submenu").fadeOut(300);
+      $(".product-filter ul li").each(function(index, item) {
+        $(item).removeClass("toggle");
+      });
+      $(this)
+        .parent()
+        .addClass("toggle");
       $(this)
         .next(".submenu")
         .fadeIn(300);
