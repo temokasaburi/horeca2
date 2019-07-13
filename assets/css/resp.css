@@ -24,7 +24,7 @@ header {
   height: 100%;
   position: fixed;
   width: 100%;
-  top: -100%;
+  top: -150%;
   transition-duration: 0.5s;
 
 }

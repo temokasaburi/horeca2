@@ -505,7 +505,7 @@ header ul li a:hover {
 }
 
 .carousel-inner {
-  height: 500px;
+  height: 496px;
 }
 
 .carousel-control {
@@ -580,16 +580,22 @@ header ul li a:hover {
 
 a.section-more {
   position: absolute;
-  top: 45px;
+  top: 10px;
   right: 10px;
-  color: #282828;
+   font-family: MCGeoN2;
+   color: #282828;
   font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
 }
 
 a.section-more span {
   position: relative;
   left: 10px;
-  top: 0px;
+  top: 2px;
   font-size: 12px;
   transition-duration: 0.2s;
 }
@@ -619,7 +625,7 @@ a.section-more:hover span {
 
 .news-section-inner article {
   padding: 0 30px 0 30px;
-  height: 420px;
+  height: 438px;
 }
 
 .news-section-inner article > a:hover {
@@ -867,10 +873,10 @@ footer {
 .product-section {
   background-image: url(../img/midmapwave.png);
   padding: 50px 0;
-  margin: 100px 0;
+  /*margin: 76.3px 0;*/
   background-size: 100% 100%;
   padding-bottom: 900px;
-  padding-top: 200px;
+  padding-top: 201px;
   background-repeat: no-repeat;
 }
 
@@ -2335,7 +2341,12 @@ section.contact-page div.contact-block > div.col-lg-6 a {
   letter-spacing: normal;
 }
 
-
+.margin-top-73 {
+  margin-top: 73px;
+}
+.margin-bottom-news {
+  margin-bottom: 76.3px;
+}
 .underbar {
   visibility: hidden;
   height: 5px;
