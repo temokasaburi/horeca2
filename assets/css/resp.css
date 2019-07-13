@@ -1,18 +1,23 @@
-html.overflow-h{
+html.overflow-h {
   overflow: hidden;
 }
-footer{
-    overflow-y: hidden;
+
+
+footer {
+  overflow-y: hidden;
 }
-html.overflow-h header{
+
+html.overflow-h header {
   margin-top: -5px;
 }
-header{
+
+header {
   box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(1, 0, 1, 0.1);
   position: relative;
   z-index: 555;
   background-color: white;
 }
+
 .search-section {
   background-color: #f9f9f9;
   z-index: 554;
@@ -23,28 +28,34 @@ header{
   transition-duration: 0.5s;
 
 }
-.search-section.open{
+
+.search-section.open {
   top: 0;
   transition-duration: 0.5s;
 }
-.on-mobile-version{
+
+.on-mobile-version {
   display: none !important;
 }
-.mobile-header{
+
+.mobile-header {
   display: none;
 }
-.mobile-header .search{
+
+.mobile-header .search {
   text-align: right;
   width: 20%;
   display: inline-block;
   font-size: 34px;
 }
-.mobile-header .burger{
+
+.mobile-header .burger {
   width: 20%;
   display: inline-block;
-  font-size: 34px;  
+  font-size: 34px;
 }
-.mobile-header .logo{
+
+.mobile-header .logo {
   width: 60%;
   display: inline-block;
   text-align: center;
@@ -52,453 +63,501 @@ header{
 }
 
 @media (max-width: 1400px) {
-    .text-over-slide .slider-more a {
-      padding-left: 150px;
-    }
-  
-    .text-over-slide h1 {
-      padding-left: 150px;
-    }
-  
-    .product-section {
-      background-size: 120% 100%;
-      background-position: center;
-    }
+  .text-over-slide .slider-more a {
+    padding-left: 150px;
   }
-  @media (max-width: 1199px) {
-    .product-section {
-      background-size: 170% 100%;
-      background-position: center;
-      padding-bottom: 1000px;
-    }
-  
-    .product-card {
-      margin-left: 0;
-      width: 100%;
-    }
-  
-    .product-listing-desc {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    
-  
-    .footer-nav li > a {
-      font-size: 12px;
-    }
-  
-    header ul li a {
-      font-size: 18px;
-    }
-  
-    header ul li {
-      padding: 43px 23px;
-    }
-  
-    .products-inner .col-lg-7 p {
-      margin-top: 0px;
-    }
-  
-    section.contact-page div.contact-block > div.col-lg-6 {
-      height: 285px;
-    }
-  
-    section.contact-page div.contact-block {
-      height: 315;
-    }
-    .about-discover-section .team div.col-lg-6 .text-right-custom{
+
+  .text-over-slide h1 {
+    padding-left: 150px;
+  }
+
+  .product-section {
+    background-size: 120% 100%;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1199px) {
+  .product-section {
+    background-size: 170% 100%;
+    background-position: center;
+    padding-bottom: 1000px;
+  }
+
+  .product-card {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .product-listing-desc {
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+
+  .footer-nav li>a {
+    font-size: 12px;
+  }
+
+  header ul li a {
+    font-size: 18px;
+  }
+
+  header ul li {
+    padding: 43px 23px;
+  }
+
+  .products-inner .col-lg-7 p {
+    margin-top: 0px;
+  }
+
+  section.contact-page div.contact-block>div.col-lg-6 {
+    height: 285px;
+  }
+
+  section.contact-page div.contact-block {
+    height: 315;
+  }
+
+  .about-discover-section .team div.col-lg-6 .text-right-custom {
     width: auto !important;
     margin-top: 236px;
     margin-left: 25px;
     margin-right: 25px;
-    }
   }
-  @media (max-width: 991px) {
-    .text-over-slide h1 {
-      font-size: 28px;
-    }
-  
-    .text-over-slide {
-      top: 35%;
-    }
-  
-    .news-section-inner article {
-      height: 470px;
-    }
-  
-    header ul li {
-      padding: 45px 15px;
-    }
-  
-    .news-section-inner article:nth-of-type(3n+1), .news-section-inner article:nth-of-type(3n+2), .news-section-inner article:nth-of-type(3n+3) {
-      padding: 0;
-    }
-  
-    header ul li a {
-      font-size: 14px;
-    }
-  
-    .decktop-version {
-      display: none;
-    }
-  
-    .mobile-version {
-      display: initial;
-    }
-  
-    .products-inner .profuct-data .col-lg-6.graybck > .row {
-      padding-top: 25.5%;
-    }
-  
-    .more-product-section > article {
-      height: 630px;
-    }
-  
-    .products-inner .more-products-card {
-      height: 600px;
-    }
-  
-    .products-inner .more-products-card img {
-      height: 439px;
-    }
-  
-    .products-card .products-card-inner a.more {
-      display: block;
-    }
-  
-    .products-card .products-card-inner a.download {
-      display: block;
-    }
-  
-    .products-card .products-card-inner {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    }
-  
-    .news-page-card-list.col-lg-7.col-md-7 {
-      margin-top: 57px;
-    }
-  
-    .products-head > div.products-head-over-img h1 {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .careers-card:nth-child(3n+1), .careers-card:nth-child(3n+2), .careers-card:nth-child(3n+3) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  
-    section.contact-page div.contact-block > div.col-lg-6 span, section.contact-page div.contact-block > div.col-lg-6 a {
-      font-size: 20px;
-      padding: 7.5px 50px;
-    }
-  
-    section.contact-page p {
-      padding: 80px 0;
-    }
-  
-    .product-section-inner div.product {
-      position: relative;
-    }
-  
-    .product .product-description {
-      padding-top: 160px;
-      margin-top: 45px;
-      text-align: center;
-    }
-    .product .product-description > h3 {
-      max-width: 500px;
-      margin: auto;
-    }
-  
-    .product-slider .slick-next {
-      margin-right: 60px;
-    }
-  
-    .product-slider .slick-prev {
-      margin-left: 60px;
-    }
-  
-    .product img {
-      height: 223px;
-      margin: -450px auto 0 auto;
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-  
-    .partners {
-      padding: 60px 60px 60px 60px;
-    }
-  
-    .main-footer .footer-social > a {
-      font-size: 40px;
-      margin-right: 40px;
-      margin-top: 10px;
-    }
-  
-    .main-footer .footer-social {
-      padding-bottom: 40.4px;
-      border-bottom: 1px solid #b2b2b2;
-      padding-left: 60px;
-    }
-  
-    .main-footer .footer-logo {
-      display: none;
-    }
-  
-    .main-footer .footer-lang {
-      text-align: left;
-      padding-top: 55.5px;
-      padding-bottom: 55.5px;
-      padding-left: 30px;
-      border-bottom: 1px solid #b2b2b2;
-    }
-    .main-footer{
-      background-image:   url(../img/footer_mobile.png);
-      background-size: 100% 100%;
-    }
-    .footer-nav li{
-        float: none;
-        padding-left: 30px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        border-right: none;
-    }
-    .footer-nav li:first-of-type {
-        padding-left: 30px;
-        padding-bottom: 15px;
-    }
-    .footer-nav{
-        
-        padding-bottom: 55.5px;
-        
-    }
-    .footer-nav li > a{
-        height: 20px;
-        font-family: "MCGeoM3-Regular";
-        font-size: 16px;
-    
-    }
-    .footer-nav li:hover a{
-        top: 0;
-    }
-    .main-footer{
-        padding: 170px 0 0 0 ;
-    }
+}
+
+@media (max-width: 991px) {
+  .text-over-slide h1 {
+    font-size: 28px;
   }
-  @media (max-width: 767px) {
-    .footer-nav{
-        padding-top: 55.5px;
-        padding-bottom: 55.5px;
-        
-    }
-    .about-discover-section .team div.col-lg-6 .text h1, .about-discover-section .team div.col-lg-6 .text-right-custom h1{
-      font-size: 26px;
-    }
-    .about-discover-section .team div.col-lg-6 .text p, .about-discover-section .team div.col-lg-6 .text-right-custom p{
-      font-size: 14px;
-    }
-    .about-discover-section .team div.col-lg-6{
-      height: auto;
-    }
-    .about-discover-section .team div.col-lg-6 img{
-      height: 310px;
-    }
-    .on-decktop-version{
-      display: none  !important;
-    }
-    .about-discover-section .team div.col-lg-6 .text-right-custom{
-      margin-top: 0;
-      padding: 65px 40px;
-    }
-    .on-mobile-version{
-      display: block !important;
-    }
-    .about-discover-section .team div.col-lg-6 .text{
-      margin-top: auto;
-      padding: 65px 40px;
-      width: auto;
-    }
-    .about-discover-section .Corporate-section div.infos {
-      height: 685px;
-      margin: 0 25px;
+
+  .text-over-slide {
+    top: 35%;
   }
-  .on-decktop-version{
-    display: none;
+
+  .news-section-inner article {
+    height: 470px;
   }
-  .about-discover-section .Corporate-section div.infos div span{
-    margin-top: 0;
+
+  header ul li {
+    padding: 45px 15px;
   }
-  .about-discover-section .Corporate-section div.infos div{
-    margin:0 25px;
+
+  .news-section-inner article:nth-of-type(3n+1),
+  .news-section-inner article:nth-of-type(3n+2),
+  .news-section-inner article:nth-of-type(3n+3) {
+    padding: 0;
   }
-  .about-discover-section .Corporate-section div.infos div:not(:last-child){
-    border-bottom: 1px solid rgba(0, 0, 0, 0.16)
-    ;
+
+  header ul li a {
+    font-size: 14px;
   }
-  col-lg-6 on-descktop-version{
+
+  .decktop-version {
     display: none;
   }
 
-  .about-discover-section .team{
+  .mobile-version {
+    display: initial;
+  }
+
+  .products-inner .profuct-data .col-lg-6.graybck>.row {
+    padding-top: 25.5%;
+  }
+
+  .more-product-section>article {
+    height: 630px;
+  }
+
+  .products-inner .more-products-card {
+    height: 600px;
+  }
+
+  .products-inner .more-products-card img {
+    height: 439px;
+  }
+
+  .products-card .products-card-inner a.more {
+    display: block;
+  }
+
+  .products-card .products-card-inner a.download {
+    display: block;
+  }
+
+  .products-card .products-card-inner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .news-page-card-list.col-lg-7.col-md-7 {
+    margin-top: 57px;
+  }
+
+  .products-head>div.products-head-over-img h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .careers-card:nth-child(3n+1),
+  .careers-card:nth-child(3n+2),
+  .careers-card:nth-child(3n+3) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section.contact-page div.contact-block>div.col-lg-6 span,
+  section.contact-page div.contact-block>div.col-lg-6 a {
+    font-size: 20px;
+    padding: 7.5px 50px;
+  }
+
+  section.contact-page p {
+    padding: 80px 0;
+  }
+
+  .product-section-inner div.product {
+    position: relative;
+  }
+
+  .product .product-description {
+    padding-top: 160px;
+    margin-top: 45px;
+    text-align: center;
+  }
+
+  .product .product-description>h3 {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .product-slider .slick-next {
+    margin-right: 60px;
+  }
+
+  .product-slider .slick-prev {
+    margin-left: 60px;
+  }
+
+  .product img {
+    height: 223px;
+    margin: -450px auto 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .partners {
+    padding: 60px 60px 60px 60px;
+  }
+
+  .main-footer .footer-social>a {
+    font-size: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+
+  .main-footer .footer-social {
+    padding-bottom: 40.4px;
+    border-bottom: 1px solid #b2b2b2;
+    padding-left: 60px;
+  }
+
+  .main-footer .footer-logo {
+    display: none;
+  }
+
+  .main-footer .footer-lang {
+    text-align: left;
+    padding-top: 55.5px;
+    padding-bottom: 55.5px;
+    padding-left: 30px;
+    border-bottom: 1px solid #b2b2b2;
+  }
+
+  .main-footer {
+    background-image: url(../img/footer_mobile.png);
+    background-size: 100% 100%;
+  }
+
+  .footer-nav li {
+    float: none;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-right: none;
+  }
+
+  .footer-nav li:first-of-type {
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+
+  .footer-nav {
+
+    padding-bottom: 55.5px;
+
+  }
+
+  .footer-nav li>a {
+    height: 20px;
+    font-family: "MCGeoM3-Regular";
+    font-size: 16px;
+
+  }
+
+  .footer-nav li:hover a {
+    top: 0;
+  }
+
+  .main-footer {
+    padding: 170px 0 0 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-nav {
+    padding-top: 55.5px;
+    padding-bottom: 55.5px;
+
+  }
+
+  .about-discover-section .team div.col-lg-6 .text h1,
+  .about-discover-section .team div.col-lg-6 .text-right-custom h1 {
+    font-size: 26px;
+  }
+
+  .about-discover-section .team div.col-lg-6 .text p,
+  .about-discover-section .team div.col-lg-6 .text-right-custom p {
+    font-size: 14px;
+  }
+
+  .about-discover-section .team div.col-lg-6 {
+    height: auto;
+  }
+
+  .about-discover-section .team div.col-lg-6 img {
+    height: 310px;
+  }
+
+  .on-decktop-version {
+    display: none !important;
+  }
+
+  .about-discover-section .team div.col-lg-6 .text-right-custom {
+    margin-top: 0;
+    padding: 65px 40px;
+  }
+
+  .on-mobile-version {
+    display: block !important;
+  }
+
+  .about-discover-section .team div.col-lg-6 .text {
+    margin-top: auto;
+    padding: 65px 40px;
+    width: auto;
+  }
+
+  .about-discover-section .Corporate-section div.infos {
+    height: 685px;
+    margin: 0 25px;
+  }
+
+  .on-decktop-version {
+    display: none;
+  }
+
+  .about-discover-section .Corporate-section div.infos div span {
+    margin-top: 0;
+  }
+
+  .about-discover-section .Corporate-section div.infos div {
+    margin: 0 25px;
+  }
+
+  .about-discover-section .Corporate-section div.infos div:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  .col-lg-6 .on-descktop-version {
+    display: none;
+  }
+
+  .about-discover-section .team {
     height: fit-content;
   }
-  .about-discover-section .team div.col-lg-6 .text{
+
+  .about-discover-section .team div.col-lg-6 .text {
     margin-top: auto;
     margin-right: 40px;
     float: none !important;
     margin-left: 40px;
-} 
+  }
 
+
+.about-discover-section .Corporate-section div.infos div.middle {
+  border-left: none;
+  border-right: none;
+}
+
+.about-discover-section .Corporate-section div.infos div {
+  height: initial;
+  margin-top: 0;
+  padding: 65px 0;
+}
+
+.buregrmenu ul.row {
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 554;
+  background-color: white;
+  transition-duration: 0.5s;
+
+}
+
+.on-mobile-version {
+  display: block;
+}
+
+.menu-social {
+  padding: 36px 0;
+}
+
+.menu-social>a {
+  font-size: 40px;
+  padding: 20px 50px;
+  color: #282828;
+}
+
+.buregrmenu.open ul.row {
+  top: 70px;
+  transition-duration: 0.5s;
+}
+
+header ul li {
+  font-size: 14px;
+  padding: 26px 0;
+  border-bottom: 1px solid #f5f6f6;
+}
+
+.mobile-header {
+  z-index: 555;
+  display: block;
+  position: relative;
+  background-color: white;
+  margin-top: -5px;
+}
+
+header ul li:first-child {
+  display: none;
+}
+
+header ul li:last-child {
+  display: none;
+}
+
+header ul li {
+  float: initial;
+}
+
+.slider-more {
+  display: none;
+}
+
+.main-footer .footer-social {
+  margin: 0;
+}
+
+.carousel-control {
+  display: none;
+}
+
+.section-header {
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.news-section-detailed .news-section-detailed-desc {
+  padding: 80px 30px;
+}
+
+.news-section-inner:not(.sectionss-news) article {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+a.section-more {
+  top: 40px;
+  right: 30px;
+}
+
+.text-over-slide {
+  top: 60px;
+}
+
+.text-over-slide h1 {
+  font-size: 21px;
+  width: 100%;
+  text-align: center;
+  padding: 0 84px;
+}
+
+.news-page .news-section-card {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.news-page-list {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+section.contact-page div.contact-block {
+  height: 540px;
+  width: fit-content;
+  margin: auto;
+}
+
+section.contact-page div.contact-block>div.col-lg-6 {
+  height: 250px;
+  padding-top: 55px;
+  width: fit-content;
+  margin: auto;
+}
+
+section.contact-page div.contact-block>div.col-lg-6:first-of-type {
+  border-right: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+}
+
+section.contact-page p {
+  padding: 80px 30px;
+}
+
+.carousel-inner {
+  height: initial;
+}
+}
+
+@media (max-width: 501px) {
+  .partners {
+    padding: 60px 60px 60px 150px;
   }
-  .about-discover-section .Corporate-section div.infos div.middle{
-    border-left: none;
-    border-right: none;
-  }
-  .about-discover-section .Corporate-section div.infos div{
-    height: initial;
-    margin-top: 0;
-    padding: 65px 0;
-  }
-    .buregrmenu ul.row {
-      padding: 0;
-      text-align: center;
-      height: 100%;
-      position: fixed;
-      top:-100%;
-      width: 100%;
-      height: 100%;
-      z-index: 554;
-      background-color: white;
-      transition-duration: 0.5s;
-      
-  }
-  
-  .on-mobile-version{
+
+  .rights-reserved a {
+    float: initial;
     display: block;
+    padding-left: 17px;
   }
-  .menu-social{
-    padding: 36px 0;
-  }
-  .menu-social > a{
-    font-size: 40px;
-    padding: 20px 50px;
-    color: #282828;
-  }
-  .buregrmenu.open ul.row{
-    top: 70px;
-    transition-duration: 0.5s;
-  }
-    header ul li{
-      font-size: 14px;
-      padding: 26px 0;
-      border-bottom: 1px solid #f5f6f6;
-    }
-    .mobile-header{
-      z-index: 555;
-      display: block;
-      position: relative;
-      background-color: white;
-      margin-top: -5px;
-    }
-    header ul li:first-child{
-      display: none;
-    }
-    header ul li:last-child{
-      display: none;
-    }
-    header ul li{
-      float: initial;
-    }
-    .slider-more {
-      display: none;
-    }
-    .main-footer .footer-social{
-        margin: 0;
-    }
-  
-    .carousel-control {
-      display: none;
-    }
-  
-    .section-header {
-      font-size: 25px;
-      margin-left: 15px;
-    }
-  
-    .news-section-detailed .news-section-detailed-desc {
-      padding: 80px 30px;
-    }
-  
-    .news-section-inner:not(.sectionss-news) article {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-  
-    a.section-more {
-      top: 40px;
-      right: 30px;
-    }
-  
-    .text-over-slide {
-      top: 60px;
-    }
-  
-    .text-over-slide h1 {
-      font-size: 21px;
-      width: 100%;
-      text-align: center;
-      padding: 0 84px;
-    }
-  
-    .news-page .news-section-card {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-  
-    .news-page-list {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-  
-    section.contact-page div.contact-block {
-      height: 540px;
-      width: fit-content;
-      margin: auto;
-    }
-  
-    section.contact-page div.contact-block > div.col-lg-6 {
-      height: 250px;
-      padding-top: 55px;
-      width: fit-content;
-      margin: auto;
-    }
-  
-    section.contact-page div.contact-block > div.col-lg-6:first-of-type {
-      border-right: none;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.16);
-    }
-  
-    section.contact-page p {
-      padding: 80px 30px;
-    }
-  
-    .carousel-inner {
-      height: initial;
-    }
-  }
-  @media (max-width: 501px) {
-    .partners {
-      padding: 60px 60px 60px 150px;
-    }
-    .rights-reserved a{
-        float: initial;
-        display:block;
-        padding-left: 17px;
-    }
-    .rights-reserved span{
-        padding-left: 17px;
-    }
 
+  .rights-reserved span {
+    padding-left: 17px;
   }
+
+}
