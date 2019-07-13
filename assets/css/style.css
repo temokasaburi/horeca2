@@ -1117,6 +1117,10 @@ footer {
   margin-bottom: 12.3px;
 }
 
+.product-listing-desc:hover h3 {
+  text-decoration:underline;
+}
+
 .product-listing-desc span {
   font-family: "MCGeoM3-Light";
   color: #a2a2a2; 
@@ -1852,6 +1856,11 @@ footer {
   padding: 0px 40px 38px 40px;
 }
 
+.news-page .news-section-card a:hover span{
+  left: -8px;
+  transition-duration: 0.3s;
+}
+
 .news-page .news-section-card a > span {
   display: inline;
   color: #0053fb;
@@ -1870,6 +1879,10 @@ footer {
   height: 105.5px;
   margin-top: 38.5px;
   border-bottom: 1px solid #f5f6f6;
+}
+
+.news-page .news-page-card-list a:hover h2{
+  text-decoration: underline;
 }
 
 .news-page .news-page-card-list a span {
