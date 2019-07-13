@@ -41,4 +41,18 @@ $(document).ready(function() {
         .fadeIn(300);
     }
   });
+
+  var array = [];
+  $(".styled-checkbox").change(function() {
+    if (this.checked) {
+      array.push($(this).prop("value"));
+    } else {
+      var index = array.indexOf($(this).prop("value"));
+      if (index > -1) {
+        array.splice(index, 1);
+      }
+    }
+
+    // axios(send, array)
+  });
 });
