@@ -4693,7 +4693,7 @@ footer {
   background-color: #f9f9f9;
 }
 
-.search-section span.icon-search1 {
+.search-section span.icon-magnifying-glass {
   position: absolute;
   top: 10px;
   font-size: 26px;
@@ -4734,11 +4734,11 @@ footer {
 
 }
 
-.search-section button.icon-long-arrow-right {
+.search-section button.icon-right-arrow-11 {
   position: absolute;
   right: 6px;
   font-size: 27px;
-  top: 11px;
+  top: 7px;
   background-color: transparent;
   border: none;
 }
@@ -4918,6 +4918,10 @@ footer {
 .news-page .news-section-card a > span {
   display: inline;
   color: #0053fb;
+  position: relative;
+  top: 11px;
+  font-size: 34px;
+  left: -19px;
 }
 
 .news-page .news-page-card-list a:first-child span {

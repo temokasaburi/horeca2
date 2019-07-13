@@ -18,7 +18,7 @@ header {
   background-color: white;
 }
 
-.search-section {
+body > .search-section {
   background-color: #f9f9f9;
   z-index: 554;
   height: 100%;
@@ -29,7 +29,7 @@ header {
 
 }
 
-.search-section.open {
+body > .search-section.open {
   top: 0;
   transition-duration: 0.5s;
 }
