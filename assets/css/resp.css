@@ -1,3 +1,32 @@
+html.overflow-h{
+  overflow: hidden;
+}
+footer{
+    overflow-y: hidden;
+}
+.on-mobile-version{
+  display: none;
+}
+.mobile-header{
+  display: none;
+}
+.mobile-header .search{
+  text-align: right;
+  width: 20%;
+  display: inline-block;
+  font-size: 34px;
+}
+.mobile-header .burger{
+  width: 20%;
+  display: inline-block;
+  font-size: 34px;  
+}
+.mobile-header .logo{
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  margin: 0px -4px;
+}
 @media (max-width: 1400px) {
     .text-over-slide .slider-more a {
       padding-left: 150px;
@@ -181,8 +210,8 @@
     }
   
     .main-footer .footer-social {
-      padding-bottom: 20px;
-      border-bottom: 1px solid #282828;
+      padding-bottom: 40.4px;
+      border-bottom: 1px solid #b2b2b2;
       padding-left: 60px;
     }
   
@@ -192,13 +221,105 @@
   
     .main-footer .footer-lang {
       text-align: left;
-      padding-top: 40px;
-      padding-left: 50px;
+      padding-top: 55.5px;
+      padding-bottom: 55.5px;
+      padding-left: 30px;
+      border-bottom: 1px solid #b2b2b2;
+    }
+    .main-footer{
+      background-image:   url(../img/footer_mobile.png);
+      background-size: 100% 100%;
+    }
+    .footer-nav li{
+        float: none;
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-right: none;
+    }
+    .footer-nav li:first-of-type {
+        padding-left: 30px;
+        padding-bottom: 15px;
+    }
+    .footer-nav{
+        padding-top: 362.5px;
+        padding-bottom: 55.5px;
+        
+    }
+    .footer-nav li > a{
+        height: 20px;
+        font-family: "MCGeoM3-Regular";
+        font-size: 16px;
+    
+    }
+    .footer-nav li:hover a{
+        top: 0;
+    }
+    .main-footer{
+        padding: 170px 0 0 0 ;
     }
   }
   @media (max-width: 767px) {
+    .footer-nav{
+        padding-top: 55.5px;
+        padding-bottom: 55.5px;
+        
+    }
+    .buregrmenu ul.row {
+      padding: 0;
+      text-align: center;
+      height: 100%;
+      position: fixed;
+      top:-100%;
+      width: 100%;
+      height: 100%;
+      z-index: 554;
+      background-color: white;
+      transition-duration: 0.5s;
+      
+  }
+  
+  .on-mobile-version{
+    display: block;
+  }
+  .menu-social{
+    padding: 36px 0;
+  }
+  .menu-social > a{
+    font-size: 40px;
+    padding: 20px 50px;
+    color: #282828;
+  }
+  .buregrmenu.open ul.row{
+    top: 70px;
+    transition-duration: 0.5s;
+  }
+    header ul li{
+      font-size: 14px;
+      padding: 26px 0;
+      border-bottom: 1px solid #f5f6f6;
+    }
+    .mobile-header{
+      z-index: 555;
+      display: block;
+      position: relative;
+      background-color: white;
+      margin-top: -5px;
+    }
+    header ul li:first-child{
+      display: none;
+    }
+    header ul li:last-child{
+      display: none;
+    }
+    header ul li{
+      float: initial;
+    }
     .slider-more {
       display: none;
+    }
+    .main-footer .footer-social{
+        margin: 0;
     }
   
     .carousel-control {
@@ -275,4 +396,13 @@
     .partners {
       padding: 60px 60px 60px 150px;
     }
+    .rights-reserved a{
+        float: initial;
+        display:block;
+        padding-left: 17px;
+    }
+    .rights-reserved span{
+        padding-left: 17px;
+    }
+
   }

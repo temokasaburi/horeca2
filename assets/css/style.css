@@ -4352,9 +4352,9 @@ footer {
   padding: 0;
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox + label:before {
+.product-filter ul li ul.submenu > li .styled-checkbox + label::after {
   content: "";
-  margin-right: 10px;
+  margin-left: 10px;
   display: inline-block;
   vertical-align: text-top;
   width: 20px;
@@ -4364,15 +4364,15 @@ footer {
   border: 1px solid #0053FB;
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox:hover + label:before {
+.product-filter ul li ul.submenu > li .styled-checkbox:hover + label:after {
   background: #0053FB;
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox:focus + label:before {
+.product-filter ul li ul.submenu > li .styled-checkbox:focus + label:after {
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox:checked + label:before {
+.product-filter ul li ul.submenu > li .styled-checkbox:checked + label:after {
   background: white;
 }
 
@@ -4381,21 +4381,16 @@ footer {
   cursor: auto;
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox:disabled + label:before {
+.product-filter ul li ul.submenu > li .styled-checkbox:disabled + label::after {
   box-shadow: none;
   background: #ddd;
 }
 
-.product-filter ul li ul.submenu > li .styled-checkbox:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  background: #0053FB;
-  width: 2px;
-  height: 2px;
-  box-shadow: 2px 0 0 #0053FB, 4px 0 0 #0053FB, 4px -2px 0 #0053FB, 4px -4px 0 #0053FB, 4px -6px 0 #0053FB, 4px -8px 0 #0053FB;
-  transform: rotate(45deg);
+.product-filter ul li ul.submenu > li .styled-checkbox:checked + label::after {
+  content: "✓";
+  color: #0053FB;
+  padding-left: 1px;
+ 
 }
 
 .product-filter ul li:hover {
