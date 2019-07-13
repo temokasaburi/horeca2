@@ -509,7 +509,7 @@ header ul li a:hover {
 }
 
 .carousel-control {
-  top: 45%;
+  top: 16%;
   font-size: 40px;
   color: white;
   opacity: 1;
@@ -518,7 +518,7 @@ header ul li a:hover {
 
 .text-over-slide {
   position: absolute;
-  top: 30%;
+  top: 12%;
   left: 0;
   right: 0;
 }
@@ -687,7 +687,7 @@ a.section-more:hover span {
   color: #0053fb;
   font-family: "MCGeoN2-Regular";
   font-size: 17px;
-  padding: 10px 29px 25px;
+  padding: 4px 29px 25px;
   margin-top: 10px;
   display: block;
 }
@@ -697,6 +697,9 @@ a.section-more:hover span {
   position: relative;
   left: 8px;
   top: 1.5px;
+  font-size: 27px;
+  top: 6px;
+  position: relative;
 }
 
 .news-section-inner article > a > span:hover > .icon-arrow-thin-right {
@@ -934,6 +937,7 @@ footer {
   color: #0dd194;
   padding: 10px 0;
   margin: 40px 0;
+  
 }
 
 .product .product-description a.download > span {
@@ -942,6 +946,8 @@ footer {
   top: 1px;
   left: 5px;
   transition-duration: 0.3s;
+  font-size: 18px;
+  position: relative;
 }
 
 .product .product-description a.download:hover > span {
@@ -960,6 +966,9 @@ footer {
   position: relative;
   left: 5px;
   transition-duration: 0.3s;
+  font-size: 30px;
+  position: relative;
+  top: 8px;
 }
 
 .product .product-description a.more:hover > span {
@@ -1041,6 +1050,8 @@ footer {
   top: 1px;
   left: 5px;
   transition-duration: 0.3s;
+  font-size: 18px;
+  position: relative;
 }
 
 .product-card .product-card-desc a.more {
@@ -1061,6 +1072,9 @@ footer {
   position: relative;
   left: 5px;
   transition-duration: 0.3s;
+  font-size: 30px;
+  position: relative;
+  top: 8px;
 }
 
 .product-card .product-card-desc a.more:hover > span {
@@ -1485,7 +1499,8 @@ footer {
 .careers-card .careers-card-inner a {
   display: block;
   width: 100%;
-  padding: 15px 20px;
+  padding: 6px 20px;
+  padding-bottom: 16px;
 }
 
 .careers-card .careers-card-inner a.more:hover {
@@ -1510,6 +1525,8 @@ footer {
   left: 5px;
   top: 1px;
   position: relative;
+  font-size: 25px;
+  top: 7px;
 }
 
 .careers-card:nth-child(3n + 1) {
@@ -2310,7 +2327,7 @@ footer {
   font-family: "MCGeoN2-Regular";
   font-size: 14px;
   color: #0053fb;
-  padding: 17.5px 25px 18px 25px;
+  padding:7.5px 25px 18px 25px;
   border-top: 2px solid #f5f6f6;
   margin-top: 17px;
 }
@@ -2318,7 +2335,12 @@ footer {
 .products-inner .more-products-card a.more span {
   color: #0053fb;
   left: -10px;
-  position: relative;
+  position: relative;  
+  font-size: 25px;
+  top: 7px;
+}
+.product-section{
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
