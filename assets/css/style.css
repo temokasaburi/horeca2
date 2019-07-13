@@ -515,7 +515,7 @@ header ul li a:hover {
   object-fit: cover;
 }
 .carousel-control {
-  top: 16%;
+  padding-top: 205px;
   font-size: 40px;
   color: white;
   opacity: 1;
@@ -524,7 +524,7 @@ header ul li a:hover {
 
 .text-over-slide {
   position: absolute;
-  top: 12%;
+  top:130px;
   left: 0;
   right: 0;
 }
