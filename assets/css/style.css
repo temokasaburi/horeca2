@@ -84,7 +84,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-filter:before {
+  content: "\e90d";
+  color: #666;
+}
 .icon-arrow-down:before {
   content: "\e90e";
 }
@@ -472,6 +475,7 @@ h1.center {
 
 body {
   border-top: 5px solid #031a63;
+  overflow-x: hidden;
 }
 
 header {
@@ -1384,7 +1388,7 @@ footer {
   width: 300px;
   max-height: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+  display: none;
   margin-top: 16px;
   overflow-y: scroll;
   z-index: 5;
@@ -2138,7 +2142,9 @@ footer {
   font-family: "MCGeoM3-Light";
   font-size: 14px;
 }
-
+.products-inner .profuct-data .col-lg-6 {
+  padding-left: 15px;
+}
 .products-inner .col-lg-6 h2 {
   color: #282828;
   font-family: "MCGeoN2-Bold";
@@ -2222,7 +2228,7 @@ footer {
 }
 
 .products-inner .profuct-data .col-lg-6 > .row div.data {
-  margin-top: 96px;
+  margin-top: 70px;
 }
 
 .products-inner
