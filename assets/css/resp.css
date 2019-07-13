@@ -4,8 +4,31 @@ html.overflow-h{
 footer{
     overflow-y: hidden;
 }
+html.overflow-h header{
+  margin-top: -5px;
+}
+header{
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(1, 0, 1, 0.1);
+  position: relative;
+  z-index: 555;
+  background-color: white;
+}
+.search-section {
+  background-color: #f9f9f9;
+  z-index: 554;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: -100%;
+  transition-duration: 0.5s;
+
+}
+.search-section.open{
+  top: 0;
+  transition-duration: 0.5s;
+}
 .on-mobile-version{
-  display: none;
+  display: none !important;
 }
 .mobile-header{
   display: none;
@@ -27,6 +50,7 @@ footer{
   text-align: center;
   margin: 0px -4px;
 }
+
 @media (max-width: 1400px) {
     .text-over-slide .slider-more a {
       padding-left: 150px;
@@ -58,9 +82,7 @@ footer{
       margin-left: 0;
     }
   
-    .footer-nav {
-      padding-top: 240px;
-    }
+    
   
     .footer-nav li > a {
       font-size: 12px;
@@ -84,6 +106,12 @@ footer{
   
     section.contact-page div.contact-block {
       height: 315;
+    }
+    .about-discover-section .team div.col-lg-6 .text-right-custom{
+    width: auto !important;
+    margin-top: 236px;
+    margin-left: 25px;
+    margin-right: 25px;
     }
   }
   @media (max-width: 991px) {
@@ -242,7 +270,7 @@ footer{
         padding-bottom: 15px;
     }
     .footer-nav{
-        padding-top: 362.5px;
+        
         padding-bottom: 55.5px;
         
     }
@@ -265,6 +293,74 @@ footer{
         padding-bottom: 55.5px;
         
     }
+    .about-discover-section .team div.col-lg-6 .text h1, .about-discover-section .team div.col-lg-6 .text-right-custom h1{
+      font-size: 26px;
+    }
+    .about-discover-section .team div.col-lg-6 .text p, .about-discover-section .team div.col-lg-6 .text-right-custom p{
+      font-size: 14px;
+    }
+    .about-discover-section .team div.col-lg-6{
+      height: auto;
+    }
+    .about-discover-section .team div.col-lg-6 img{
+      height: 310px;
+    }
+    .on-decktop-version{
+      display: none  !important;
+    }
+    .about-discover-section .team div.col-lg-6 .text-right-custom{
+      margin-top: 0;
+      padding: 65px 40px;
+    }
+    .on-mobile-version{
+      display: block !important;
+    }
+    .about-discover-section .team div.col-lg-6 .text{
+      margin-top: auto;
+      padding: 65px 40px;
+      width: auto;
+    }
+    .about-discover-section .Corporate-section div.infos {
+      height: 685px;
+      margin: 0 25px;
+  }
+  .on-decktop-version{
+    display: none;
+  }
+  .about-discover-section .Corporate-section div.infos div span{
+    margin-top: 0;
+  }
+  .about-discover-section .Corporate-section div.infos div{
+    margin:0 25px;
+  }
+  .about-discover-section .Corporate-section div.infos div:not(:last-child){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16)
+    ;
+  }
+  col-lg-6 on-descktop-version{
+    display: none;
+  }
+
+  .about-discover-section .team{
+    height: fit-content;
+  }
+  .about-discover-section .team div.col-lg-6 .text{
+    margin-top: auto;
+    margin-right: 40px;
+    float: none !important;
+    margin-left: 40px;
+} 
+
+  }
+  .about-discover-section .Corporate-section div.infos div.middle{
+    border-left: none;
+    border-right: none;
+  }
+  .about-discover-section .Corporate-section div.infos div{
+    height: initial;
+    margin-top: 0;
+    padding: 65px 0;
+  }
     .buregrmenu ul.row {
       padding: 0;
       text-align: center;
@@ -335,7 +431,7 @@ footer{
       padding: 80px 30px;
     }
   
-    .news-section-inner article {
+    .news-section-inner:not(.sectionss-news) article {
       margin-left: 15px;
       margin-right: 15px;
     }
