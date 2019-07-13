@@ -509,7 +509,7 @@ header ul li a:hover {
 }
 
 .carousel-control {
-  top: 45%;
+  top: 38%;
   font-size: 40px;
   color: white;
   opacity: 1;
@@ -518,7 +518,7 @@ header ul li a:hover {
 
 .text-over-slide {
   position: absolute;
-  top: 14%;
+  top: 29%;
   left: 0;
   right: 0;
 }
@@ -548,11 +548,7 @@ header ul li a:hover {
 .text-over-slide .slider-more a {
   font-family: "MCGeoN2-Regular";
   font-size: 20px;
-<<<<<<< HEAD
-  color: #0053fb;
-=======
   color: white;
->>>>>>> f61b116744c5b4abf9f5550b5181601af9ff4f09
 }
 
 .text-over-slide .slider-more a > span {
