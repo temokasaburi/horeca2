@@ -597,14 +597,14 @@ a.section-more span {
 }
 
 a.section-more:hover {
-  color: #0dd194;
-  transition-duration: 0.3s;
+  /*color: #0dd194;*/
+  /*transition-duration: 0.3s;*/
 }
 
 a.section-more:hover span {
   left: 15px;
   transition-duration: 0.3s;
-  color: #0dd194;
+  /*color: #0dd194;*/
 }
 
 .news-section-inner {
@@ -951,8 +951,8 @@ footer {
 }
 
 .product .product-description a.download:hover > span {
-  left: 8px;
-  transition-duration: 0.3s;
+ /* left: 8px;
+  transition-duration: 0.3s;*/
 }
 
 .product .product-description a.more {
