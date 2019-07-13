@@ -3595,17 +3595,26 @@ header ul li a:hover {
   font-size: 45px;
   font-family: "MCGeoM3-Bold";
   padding-bottom: 15px;
+  height: 183px;
+  overflow: hidden;
 }
 
 .text-over-slide .slider-more {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px 0px;
+}
+.carousel-indicators .active{
+  height: 18.7px;
+  width: 18.7px;
+}
+.carousel-indicators li{
+  height: 16.7px;
+  width: 16.7px;
 }
 
 .text-over-slide .slider-more a {
   font-family: "MCGeoN2-Regular";
   font-size: 20px;
-  color: #0053FB;
+  color: white;
 }
 
 .text-over-slide .slider-more a > span {
@@ -4472,6 +4481,8 @@ footer {
 
 .careers-card .careers-card-inner > span > span:last-child {
   float: right;
+  position: relative;
+  top: 5px;
 }
 
 .careers-card .careers-card-inner a {
