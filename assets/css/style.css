@@ -4625,6 +4625,19 @@ footer {
   letter-spacing: normal;
 }
 
+
+
+.modal-search-input {
+  border: none !important;
+  border-bottom:solid 1px #666666 !important;
+  background-color: #f9f9f9 !important;
+  border-radius: 0px !important; 
+}
+
+.modal-search-ip-wrapper{
+
+}
+
 .search-section button.icon-long-arrow-right {
   position: absolute;
   right: 6px;
@@ -5358,5 +5371,4 @@ section.contact-page div.contact-block > div.col-lg-6 a {
   line-height: 1.27;
   letter-spacing: normal;
 }
-
 /*# sourceMappingURL=style.css.map */
