@@ -46,7 +46,7 @@
             <section class="search-section ">
                 <div class=" container">
                     <div class="row">
-                        <div class="search-inp"><span class="icon-search1"></span><input type="text" value="123" placeholder="searchs"><button class="icon-long-arrow-right"></button></div>
+                        <div class="search-inp modal-search-ip-wrapper"><span class="icon-search1 "></span><input type="text" value="123" class="modal-search-input" placeholder="searchs"><button class="icon-long-arrow-right"></button></div>
                         <span class="popular-res">Popular results</span>
                         <div class="pop-res">
                             <a href="">Tork Xpress® Multifold Hand Towel Dispenser, Stainless Steel</a>
@@ -59,7 +59,11 @@
                 </div>
             </section>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
@@ -106,6 +110,7 @@
             </div>
 
         </div>
+
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
