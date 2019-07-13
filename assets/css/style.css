@@ -524,7 +524,7 @@ header ul li a:hover {
 
 .text-over-slide {
   position: absolute;
-  top:130px;
+  top:120px;
   left: 0;
   right: 0;
 }
@@ -535,7 +535,7 @@ header ul li a:hover {
   font-size: 45px;
   font-family: "MCGeoM3-Bold";
   padding-bottom: 15px;
-  height: 183px;
+  height: 195px;
   overflow: hidden;
 }
 
@@ -706,6 +706,7 @@ a.section-more:hover span {
   font-size: 27px;
   top: 6px;
   position: relative;
+  transition-duration: 0.3s;
 }
 
 .news-section-inner article > a > span:hover > .icon-arrow-thin-right {
@@ -2460,6 +2461,10 @@ section.contact-page div.contact-block > div.col-lg-6 a {
   font-size: 29px;
   position: relative;
   top: 1.5px;
+}
+.news-section-inner article > a > span:hover > span{
+  left: 15px;
+  transition-duration: 0.3s;
 }
 
 /* }
