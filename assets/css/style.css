@@ -1238,7 +1238,7 @@ footer {
 .products-card .products-card-inner a {
   display: block;
   width: 100%;
-  padding: 17.5px 25px 18px 25px;
+  padding: 10.5px 25px 18px 25px;
 }
 
 .products-card .products-card-inner:hover a.more {
@@ -1271,6 +1271,8 @@ footer {
   left: -10px;
   position: relative;
   transition-duration: 0.2s;
+  font-size: 24px;
+  top: 6px;
 }
 
 .products-card .products-card-inner:hover a.download {
