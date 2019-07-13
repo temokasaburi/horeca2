@@ -505,9 +505,15 @@ header ul li a:hover {
 }
 
 .carousel-inner {
-  height: 496px;
+  height: 500px;
 }
-
+.carousel-inner > .item{
+  height: 500px;
+}
+.carousel-inner > .item > img{
+  height: 500px;
+  object-fit: cover;
+}
 .carousel-control {
   top: 16%;
   font-size: 40px;

@@ -83,6 +83,9 @@ body > .search-section.open {
     background-position: center;
     padding-bottom: 1000px;
   }
+  .carousel-control{
+    display: none;
+  }
 
   .product-card {
     margin-left: 0;
