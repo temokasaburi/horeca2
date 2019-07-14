@@ -11,6 +11,12 @@ $(document).ready(function() {
     $("html").toggleClass("overflow-h");
   });
 
+  $(".mobile-filter-btn").click(function() {
+    event.preventDefault();
+    $("div.product-filter").toggleClass("open");
+    $(".mobile-filter-btn").toggleClass("inverted");
+  });
+
   // header animation
   $(".animated-menu").hover(function() {
     // console.log($(this).find(".underbar").css());
@@ -19,26 +25,26 @@ $(document).ready(function() {
   $(".product-filter-menu").click(function() {
     if (
       $(this)
-        .next(".submenu")
-        .css("display") == "block"
+        .parent().hasClass('toggle')
+        
     ) {
       $(this)
         .parent()
         .removeClass("toggle");
-      $(this)
-        .next(".submenu")
-        .fadeOut(300);
+      // $(this)
+      //   .next(".submenu")
+      //   .fadeOut(300);
     } else {
-      $("ul.submenu").fadeOut(300);
+      // $("ul.submenu").fadeOut(300);
       $(".product-filter ul li").each(function(index, item) {
         $(item).removeClass("toggle");
       });
       $(this)
         .parent()
         .addClass("toggle");
-      $(this)
-        .next(".submenu")
-        .fadeIn(300);
+      // $(this)
+      //   .next(".submenu")
+      //   .fadeIn(300);
     }
   });
 

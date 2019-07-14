@@ -349,15 +349,28 @@ body > .search-section.open {
   .product-filter ul li{
     float: initial;
     width: 100%;
-    min-height: 59px;
-    padding: 0;
+    padding: 13px 10px;
     border-right: 0;
+    border-radius: 6px;
+    font-family: "MCGeoN2-Regular";
+    font-size: 14px;
+    color: #666666;
+
   }
-  
+  .product-filter ul li ul.submenu > li .styled-checkbox + label::after{
+    margin-right: -6px;
+  }
+  .product-filter ul li.toggle span{
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+
+  }
   .product-filter ul li span{
     float: right;
     top: 7px;
-    margin-right: 11px;
+    margin-right: 14px;
+    transition-duration: 0.3s;
+
   }
   .product-filter ul li ul.submenu {
     position: initial;
@@ -365,16 +378,80 @@ body > .search-section.open {
     width: 100%;
     max-height: initial;
     box-shadow: none;
-    display: none;
     margin-top: 0px;
     overflow-y: initial;
+    display: block;
     z-index: 5;
     margin-left: 0px;
+    height: 0;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    padding: 0;
+
+    
+  }
+  .product-filter ul li.toggle ul.submenu{
+    height: initial;
+    padding: initial;
+    transition-duration: 0.3s;
+    overflow: hidden;
+  }
+  .product-filter ul li.toggle ul.submenu{
+    color: #666666;
   }
   .product-filter{
     border-bottom: none;
     background-color: #f9f9f9;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: height 1s ease;
   }
+  .product-filter ul li.toggle{
+    background-color: white;  
+  }
+  .mobile-filter-btn{
+    display: block;
+    width: 100%;
+    height: 60px;
+    color: #666666;
+    font-size: 16px;
+    font-family: "MCGeoN2-Regular";
+    padding: 20px 10px;
+    padding-right: 14px;
+    transition-duration: 0.3s;
+    
+  }
+  .mobile-filter-btn-div{
+
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  .mobile-filter-btn span.icon-filter{
+    font-size: 17px;
+    margin-right: 12px;
+
+  }
+  .mobile-filter-btn span.arrow{
+    font-size: 5px;
+    float: right;
+    margin-right: 4px;
+    margin-top: 6px;
+
+  }
+  .products-card:nth-child(3n + 1), .products-card:nth-child(3n + 2), .products-card:nth-child(3n + 3){
+    padding-right:0;
+    padding-left: 0; 
+  }
+  .product-filter.open{
+    transition: height 1s ease;
+    height: auto;
+  }
+  .mobile-filter-btn.inverted > span.arrow{
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+  }
+
 }
 
 @media (max-width: 767px) {

@@ -2474,6 +2474,9 @@ section.contact-page div.contact-block > div.col-lg-6 a {
   left: 15px;
   transition-duration: 0.3s;
 }
+.mobile-filter-btn{
+  display: none;
+}
 
 /* }
 .animated-menu {
